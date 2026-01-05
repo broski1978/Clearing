@@ -173,6 +173,48 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
+<script>
+// Checkbox event listeners
+document.getElementById("roadsCheck").addEventListener("change", function(e) {
+  if (e.target.checked) {
+    map.addLayer(roadsLayer);
+  } else {
+    map.removeLayer(roadsLayer);
+  }
+});
+
+document.getElementById("parksCheck").addEventListener("change", function(e) {
+  if (e.target.checked) {
+    map.addLayer(parksLayer);
+  } else {
+    map.removeLayer(parksLayer);
+  }
+});
+
+document.getElementById("resCheck").addEventListener("change", function(e) {
+  if (e.target.checked) {
+    map.addLayer(residentialLayer);
+  } else {
+    map.removeLayer(residentialLayer);
+  }
+});
+
+document.getElementById("comCheck").addEventListener("change", function(e) {
+  if (e.target.checked) {
+    map.addLayer(commercialLayer);
+  } else {
+    map.removeLayer(commercialLayer);
+  }
+});
+
+document.getElementById("schoolsCheck").addEventListener("change", function(e) {
+  if (e.target.checked) {
+    map.addLayer(schoolsLayer);
+  } else {
+    map.removeLayer(schoolsLayer);
+  }
+});
+</script>
 
 </script>
 </body>
