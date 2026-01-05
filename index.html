@@ -173,49 +173,29 @@ legend.onAdd = function (map) {
 };
 
 legend.addTo(map);
-</script>
+</script>   <!-- CLOSE the main script block -->
+
 <script>
 // Checkbox event listeners
 document.getElementById("roadsCheck").addEventListener("change", function(e) {
-  if (e.target.checked) {
-    map.addLayer(roadsLayer);
-  } else {
-    map.removeLayer(roadsLayer);
-  }
+  e.target.checked ? map.addLayer(roadsLayer) : map.removeLayer(roadsLayer);
 });
 
 document.getElementById("parksCheck").addEventListener("change", function(e) {
-  if (e.target.checked) {
-    map.addLayer(parksLayer);
-  } else {
-    map.removeLayer(parksLayer);
-  }
+  e.target.checked ? map.addLayer(parksLayer) : map.removeLayer(parksLayer);
 });
 
 document.getElementById("resCheck").addEventListener("change", function(e) {
-  if (e.target.checked) {
-    map.addLayer(residentialLayer);
-  } else {
-    map.removeLayer(residentialLayer);
-  }
+  e.target.checked ? map.addLayer(residentialLayer) : map.removeLayer(residentialLayer);
 });
 
 document.getElementById("comCheck").addEventListener("change", function(e) {
-  if (e.target.checked) {
-    map.addLayer(commercialLayer);
-  } else {
-    map.removeLayer(commercialLayer);
-  }
+  e.target.checked ? map.addLayer(commercialLayer) : map.removeLayer(commercialLayer);
 });
 
 document.getElementById("schoolsCheck").addEventListener("change", function(e) {
-  if (e.target.checked) {
-    map.addLayer(schoolsLayer);
-  } else {
-    map.removeLayer(schoolsLayer);
-  }
+  e.target.checked ? map.addLayer(schoolsLayer) : map.removeLayer(schoolsLayer);
 });
 </script>
-
 </body>
 </html>
